@@ -2,7 +2,8 @@
 
 This is a simple blogging application project written on ruby on rails. The project test basic concepts of MVC application architecture. It involves, installation and configuration of ruby on rails, use of models, controllers, views, routers and database. It also tests basic CRUD implementation.
 
-![tictactoe](https://user-images.githubusercontent.com/65791349/117374832-30ca6a80-aece-11eb-98ca-3201ee88f892.png)
+![blog_screenshot](https://user-images.githubusercontent.com/42869046/120564732-3f943680-c414-11eb-8fd0-5643e225fec1.JPG)
+
 
 ## Built With
 
