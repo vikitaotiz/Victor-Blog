@@ -1,24 +1,31 @@
 <% if @posts.length %>
-    <div class="card mb-4">
+    <div class="card mb-4 shadow bn_index_head">
         <% if @posts.first.post_image.attached? %>
-            <%= image_tag @posts.first.post_image, style: "height: 300px;"%>
+            <%= image_tag @posts.first.post_image, class: "img_bn"%>
         <% end %>
+         <div class="centered p-5 bn_index_text">
+                <h4 class="fw-bolder">Welcome To Victor's Blog</h4>
+                <p>This is my first ruby on rails blog application</p>
+            </div>
     </div>
 <% end %>
 
 <hr>
 
+<h5 class="fst-italic">Latest Post</h5>
+
 <div class="row">
   <% @posts.each do |post| %>
     <div class="col-lg-4 col-md-6 col-sm-12">
         <div class="pa-2">
-            <div class="card">
+            <div class="card shadow">
                 <% if post.post_image.attached? %>
-                    <%= image_tag post.post_image, style: "height: 150px;" %>
+                    <%= image_tag post.post_image, class: "img_post_hd" %>
                 <% end %>
-                
+
                 <div class="card-body">
-                    <h5 class="card-title"><%= link_to post.title, post %></h5>
+                    <h5 class="card-title"><%= link_to post.title, post, class: "text-decoration-none" %></h5>
+                    <hr>
                     <p class="card-text">
                         <%= post.body %>
                     </p>
