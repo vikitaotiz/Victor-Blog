@@ -30,6 +30,7 @@ class PostsController < ApplicationController
 
   def update
     @post = Post.find(params[:id])
+    @post.post_image.purge if @post.post_image.attached?
 
     if @post.update(post_params)
       redirect_to @post
@@ -40,6 +41,7 @@ class PostsController < ApplicationController
 
   def destroy
     @post = Post.find(params[:id])
+    @post.post_image.purge if @post.post_image.attached?
     @post.destroy
 
     redirect_to root_path
