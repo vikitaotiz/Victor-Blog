@@ -28,10 +28,6 @@ This is a simple blogging application project written on ruby on rails. The proj
 
 This is a simple blogging application project written on ruby on rails. The project test basic concepts of MVC application architecture.
 
-## If you want to view a demo, follow this link:
-
-[Victor's Blog](https://vikita-blog.herokuapp.com/)
-
 ## Authors
 
 :bust_in_silhouette: **Victor Otieno**
