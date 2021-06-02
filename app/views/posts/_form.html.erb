@@ -17,6 +17,15 @@
       <%= form.text_field :title, class: "form-control" %>
     </div>
 
+    <% if post.post_image.attached? %>
+      <%= image_tag post.post_image, class: "form-control" %>
+    <% end %>
+
+    <div class="form-group">
+      <%= form.label :Image, class: "form-label" %>
+      <%= form.file_field :post_image, class: "form-control" %>
+    </div>
+
     <div class="field">
       <%= form.label :body, class: "form-label"  %>
       <%= form.text_area :body, class: "form-control"  %>

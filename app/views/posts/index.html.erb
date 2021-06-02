@@ -1,3 +1,11 @@
+<% if @posts.length %>
+    <div class="card mb-4">
+        <% if @posts.first.post_image.attached? %>
+            <%= image_tag @posts.first.post_image, style: "height: 300px;"%>
+        <% end %>
+    </div>
+<% end %>
+
 <hr>
 
 <div class="row">
@@ -5,6 +13,10 @@
     <div class="col-lg-4 col-md-6 col-sm-12">
         <div class="pa-2">
             <div class="card">
+                <% if post.post_image.attached? %>
+                    <%= image_tag post.post_image, style: "height: 150px;" %>
+                <% end %>
+                
                 <div class="card-body">
                     <h5 class="card-title"><%= link_to post.title, post %></h5>
                     <p class="card-text">
