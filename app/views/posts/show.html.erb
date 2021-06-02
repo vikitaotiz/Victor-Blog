@@ -7,6 +7,9 @@
                 <div class="col ml-5">
                     <span class="font-weight"><%= @post.title %></span>
                 </div>
+                <div class="col">
+                    <%= link_to 'Edit', edit_post_path(@post) %>
+                </div>
             </div>
 
             <p class="card-text">
