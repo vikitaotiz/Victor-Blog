@@ -4,7 +4,6 @@ This is a simple blogging application project written on ruby on rails. The proj
 
 ![blog_screenshot](https://user-images.githubusercontent.com/42869046/120564732-3f943680-c414-11eb-8fd0-5643e225fec1.JPG)
 
-
 ## Built With
 
 - Ruby
@@ -15,15 +14,14 @@ This is a simple blogging application project written on ruby on rails. The proj
 
 ## Getting Started
 
+- Ensure you have rails installed by running 'rails --version'. Otherwise run 'gem install rails'
 - Click on the `Code` green button
 - By the right end of the read-only input containing the repository link click the clipboard icon to copy the link
 - In your local PC, open your terminal in the folder you would like to clone the repository into
 - Clone the repository with the command: `git clone (copied link)`; like so: `git clone https://github.com/vikitaotiz/Victor-Blog.git`
-- After the clone, type in the command `cd Victor-Blog` to access the directory on the terminal
-
-#### Play the game
-
-- After clonning the project, run rails server at the root of the project in the terminal.
+- After the clone, type in the command `cd Victor-Blog` to access the app directory on the terminal
+- Then run 'bundle install' to install all the required dependencies
+- Run 'rails server' to spin up a development server
 - Once the server is up, open this link 'http://127.0.0.1:3000' on your browser
 
 ## About the game
