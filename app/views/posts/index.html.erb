@@ -1,2 +1,18 @@
-<h1>Victor's Blog</h1>
-<p>Ruby on rails blog application</p>
+<hr>
+
+<div class="row">
+  <% @posts.each do |post| %>
+    <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="pa-2">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title"><%= link_to post.title, post %></h5>
+                    <p class="card-text">
+                        <%= post.body %>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <% end %>
+  </div>
