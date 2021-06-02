@@ -27,3 +27,16 @@ html {
 .img_post_hd {
   height: 150px;
 }
+
+.foot {
+  background-color: #263238;
+}
+
+.icon {
+  font-size: large;
+  padding: 2px;
+}
+
+.copy {
+  background-color: #1e282d;
+}
