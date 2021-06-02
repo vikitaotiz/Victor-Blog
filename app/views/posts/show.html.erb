@@ -8,7 +8,10 @@
                     <span class="font-weight"><%= @post.title %></span>
                 </div>
                 <div class="col">
-                    <%= link_to 'Edit', edit_post_path(@post) %>
+                    <%= link_to 'Edit', edit_post_path(@post) %> |
+                    <%= link_to "Delete Post", post_path(@post),
+                        method: :delete,
+                        data: { confirm: "Are you sure?" } %>
                 </div>
             </div>
 
