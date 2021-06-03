@@ -1,5 +1,4 @@
 class PostsController < ApplicationController
-  
   def index
     @posts = Post.all
   end
@@ -17,7 +16,7 @@ class PostsController < ApplicationController
 
     respond_to do |format|
       if @post.save
-        format.html { redirect_to @post, notice: "Post was successfully created." }
+        format.html { redirect_to @post, notice: 'Post was successfully created.' }
       else
         format.html { render :new, status: :unprocessable_entity }
       end
@@ -47,8 +46,9 @@ class PostsController < ApplicationController
     redirect_to root_path
   end
 
-  private def post_params
+  private
+
+  def post_params
     params.require(:post).permit(:title, :body, :post_image)
   end
-
 end
