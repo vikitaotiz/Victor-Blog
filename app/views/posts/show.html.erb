@@ -1,0 +1,26 @@
+    <div class="card">
+        <div class="card-body">
+        <div class="bn_index_head">
+            <% if @post.post_image.attached? %>
+                <%= image_tag @post.post_image, style: "width: 100%; height: 400px;" %>
+            <% end %>
+            <div class="centered p-5 bn_index_text">
+                <h4 class="fw-bolder"><%= @post.title %></h4>
+            </div>
+        </div>
+            
+            <div class="d-flex border-top border-bottom p-3 mb-3">
+                <div class="me-auto p-2"><%= link_to 'Back', posts_path %></div>
+                <div class="p-2">
+                    <%= link_to 'Edit', edit_post_path(@post) %> |
+                    <%= link_to "Delete Post", post_path(@post),
+                        method: :delete,
+                        data: { confirm: "Are you sure?" } %>
+                </div>
+            </div>
+
+            <p class="card-text">
+                <%= @post.body %>
+            </p>
+        </div>
+    </div>

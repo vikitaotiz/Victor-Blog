@@ -1,0 +1,42 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.bn_index_head {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.bn_index_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 3px solid;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.img_bn {
+  height: 300px;
+}
+
+.img_post_hd {
+  height: 150px;
+}
+
+.foot {
+  background-color: #263238;
+}
+
+.icon {
+  font-size: large;
+  padding: 2px;
+}
+
+.copy {
+  background-color: #1e282d;
+}
